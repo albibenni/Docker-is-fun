@@ -7,8 +7,11 @@ USER node
 
 WORKDIR /home/node/code
 
-COPY --chown=node:node . .
+COPY --chown=node:node package.json pnpm-lock.yaml ./
 
 RUN pnpm install --frozen-lockfile
+
+COPY --chown=node:node . .
+
 
 CMD ["node", "index.js"]
