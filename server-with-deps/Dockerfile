@@ -13,5 +13,4 @@ RUN pnpm install --frozen-lockfile
 
 COPY --chown=node:node . .
 
-
 CMD ["node", "index.js"]
