@@ -37,3 +37,9 @@ docker exec container_id
   - get to running existing containers
 - `exec`
   - open the `sh` of the running container
+
+# Running current `Dockerfile`
+
+```sh
+docker build .
+```
