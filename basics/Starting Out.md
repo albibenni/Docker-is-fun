@@ -41,5 +41,8 @@ docker exec container_id
 # Running current `Dockerfile`
 
 ```sh
-docker build .
+docker build . -t my-node-app
 ```
+
+- `-t`
+  - is the image name tag
